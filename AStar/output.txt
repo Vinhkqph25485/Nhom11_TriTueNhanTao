@@ -1,0 +1,12 @@
+Bảng các bước thực hiện A*:
+Node	g	 h	 f	 Path
+A	0	14	14	A
+D	7	6	13	A->D
+E	11	8	19	A->D->E
+K	15	2	17	A->D->E->K
+I	14	4	18	A->D->E->I
+B	19	0	19	A->D->E->I->B
+
+Kết quả:
+Đường đi: A -> D -> E -> I -> B
+Chi phí: 19
