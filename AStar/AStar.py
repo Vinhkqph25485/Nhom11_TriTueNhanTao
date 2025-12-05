@@ -11,11 +11,13 @@ def read_input(filename):
             if not line or line.startswith("#"):
                 continue
             parts = line.split()
+            # cạnh u v cost
             if len(parts) == 3 and parts[2].isdigit():
                 u, v, cost = parts[0], parts[1], int(parts[2])
                 if u not in edges:
                     edges[u] = []
                 edges[u].append((v, cost))
+            # heuristic node h
             elif len(parts) == 2 and parts[1].isdigit():
                 heuristics[parts[0]] = int(parts[1])
             elif parts[0] == "START":
@@ -53,10 +55,9 @@ def a_star(edges, heuristics, start, goal, output_file):
                 f_new = g_new + heuristics[neighbor]
                 heapq.heappush(open_list, (f_new, g_new, neighbor, path + [neighbor]))
 
-    # Nếu không tìm thấy
     with open(output_file, "a", encoding="utf-8") as out:
         out.write("\nKhông tìm thấy đường đi!\n")
 
 if __name__ == "__main__":
-    edges, heuristics, start, goal = read_input(r"./AStar_NhanhCan/input.txt")
-    a_star(edges, heuristics, start, goal, "./AStar_NhanhCan/output.txt")
+    edges, heuristics, start, goal = read_input(r"./AStar/input.txt")
+    a_star(edges, heuristics, start, goal, "./AStar/output.txt")

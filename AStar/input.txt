@@ -1,24 +1,31 @@
 # Đồ thị: mỗi dòng là u v cost
 A C 9
-A D 20
-C F 4
-C E 6
-D G 13
-F H 6
-E H 8
+A D 7
+A E 13
+A F 20
+F G 4
+F I 6
+D E 4
+D H 8
+C H 6
 H K 5
-K B 9
+E K 4
+E I 3
+I K 9
+I B 5
+K B 6
 
 # Heuristic: node h
 A 14
-G 12
-F 7
+B 0
 C 15
 D 6
 E 8
+F 7
+G 12
 H 10
+I 4
 K 2
-B 0
 
 # Start và Goal
 START A
