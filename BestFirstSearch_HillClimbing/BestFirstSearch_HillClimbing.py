@@ -14,7 +14,7 @@ class Node:
 
 def read_graph(filename):
     # Đọc đồ thị từ file
-    graph = {}
+    graph = {} 
     heuristics = {}
     start, goal = None, None
     
