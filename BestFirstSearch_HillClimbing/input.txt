@@ -1,0 +1,27 @@
+A
+B
+14
+A C 15
+A D 6
+A E 7
+C F 10
+D F 10
+D I 8
+E G 5
+E K 12
+F B 0
+I B 0
+I G 5
+G B 0
+G H 3
+H B 0
+A 20
+B 0
+C 15
+D 6
+E 7
+F 10
+G 5
+H 3
+I 8
+K 12

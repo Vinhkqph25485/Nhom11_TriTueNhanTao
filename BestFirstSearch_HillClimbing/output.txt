@@ -1,0 +1,11 @@
+Bước thực hiện thuật toán Best First Search:
+TT    | Phát triển | Trạng thái kề        | Danh sách L (Open List)       
+--------------------------------------------------------------------------------
+1     | A          | C, D, E              | D(6), E(7), C(15)
+2     | D          | F, I                 | E(7), I(8), F(10), C(15)
+3     | E          | G, K                 | G(5), I(8), F(10), K(12), C(15)
+4     | G          | B, H                 | B(0), H(3), I(8), F(10), K(12), C(15)
+5     | B          | -                    | H(3), I(8), F(10), K(12), C(15)
+
+Đường đi từ trạng thái đầu đến trạng thái kết thúc:
+  A -> E -> G -> B
