@@ -1,4 +1,3 @@
-13
 A B
 A C
 A D
@@ -12,4 +11,5 @@ D C
 D F
 E K
 F K
-A G
+START A
+GOAL G
